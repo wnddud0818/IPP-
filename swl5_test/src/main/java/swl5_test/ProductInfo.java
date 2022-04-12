@@ -36,7 +36,6 @@ public class ProductInfo {
 		vender = map.get(code);
 		if(vender == null)
 		vender = "등록되지 않은 제품입니다!";
-		
 		date = new Date();
 		
 	}

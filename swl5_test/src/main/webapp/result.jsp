@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="swl5_test.*""%>
-<% 
-	UserInfo user = new UserInfo("한국인","1004","2019=10=31");
+    pageEncoding="UTF-8" import="swl5_test.*"%>
+<%
+	UserInfo user = new UserInfo("한국인","1004","2019-10-31");
 	ProductInfo product = new ProductInfo();
 	
 	String code = request.getParameter("code");
@@ -29,20 +29,20 @@
 		</tr>
 		<tr>
 			<td>제품코드</td>
-			<td></td>
+			<td><%= product.getCode() %></td>
 		</tr>
 		<tr>
 			<td>제조사명</td>
-			<td></td>
+			<td><%= product.getVender() %></td>
 		</tr>
 		<tr>
 			<td>조회일시</td>
-			<td></td>
+			<td><%= product.getDate() %></td>
 		</tr>
 	</table>
 	<hr>
 	<div>
-		작성자 : 비번 : 작성일 : 
+		작성자 : <%=user.getName() %> 비번 : <%=user.getCode() %> 작성일 : <%=user.getDate() %>
 	</div>
 </body>
 </html>
