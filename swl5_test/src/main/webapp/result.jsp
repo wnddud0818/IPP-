@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="swl5_test.*""%>
 <% 
-	UserInfo = user = new UserInfo();
+	UserInfo user = new UserInfo("한국인","1004","2019=10=31");
 	ProductInfo product = new ProductInfo();
 	
 	String code = request.getParameter("code");
