@@ -1,7 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<% 
+	UserInfo = user = new UserInfo();
+	ProductInfo product = new ProductInfo();
+	
+	String code = request.getParameter("code");
+	
+	product.setCode(code);
+	product.find();
+%>
 <!DOCTYPE html>
 <html>
+<style>
+.body{
+	margin : 0 auto;
+}
+</style>
 <head>
 	<meta charset="UTF-8">
 	<title>제품코드 조회 결과</title>
@@ -28,7 +42,7 @@
 	</table>
 	<hr>
 	<div>
-		작성자 : 
+		작성자 : 비번 : 작성일 : 
 	</div>
 </body>
 </html>
