@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="swl5_test.*""%>
 <% 
 	UserInfo = user = new UserInfo();
 	ProductInfo product = new ProductInfo();

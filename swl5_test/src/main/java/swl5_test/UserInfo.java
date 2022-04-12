@@ -22,4 +22,12 @@ public class UserInfo {
 	public void setDate(String date) {
 		this.date = date;
 	}
+	public UserInfo(String name, String code, String date) {
+		super();
+		this.name = name;
+		this.code = code;
+		this.date = date;
+	}
+	
+	
 }
