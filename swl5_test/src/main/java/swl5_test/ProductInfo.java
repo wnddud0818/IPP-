@@ -32,11 +32,10 @@ public class ProductInfo {
 		map.put("A100", "삼성전자");
 		map.put("A200", "LG전자");
 		map.put("A300", "하이닉스");
-		
+		map.put("A400", "등록예정");
 		vender = map.get(code);
 		if(vender == null)
 		vender = "등록되지 않은 제품입니다!";
 		date = new Date();
-		
 	}
 }
